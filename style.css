@@ -1,0 +1,108 @@
+body {
+	font-family: Verdana, Geneva, sans-serif;
+}
+
+header {
+	background-color: #3E2F5B;
+	max-width: 1300px;
+	padding: 20px;
+	margin: auto;
+	display: flex;
+	border: solid;
+	border-bottom: none;
+	border-top: none;
+	border-width: 3px;
+	border-color: #98A6D4;
+}
+
+footer {
+	background-color: #3E2F5B;
+	max-width: 1300px;
+	border: solid;
+	border-top: none;
+	border-width: 3px;
+	border-color: #98A6D4;
+	display: flex;
+	margin: auto;
+	padding: 20px;
+}
+
+hr.style-four {
+    height: 3px;
+    border: 0;
+    box-shadow: inset 0 12px 12px -12px rgba(0, 0, 0, 0.5);
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.panel-group {
+	margin-right: 10px;
+	margin-left: 5px;
+}
+
+.panel-title {
+	letter-spacing: 2px;
+}
+
+#gitbtn {
+
+}
+
+#chi {
+	color: white;
+	letter-spacing: 2px;
+	margin-bottom: 20px;
+	font-weight: lighter;
+}
+
+#city {
+	margin-top: 10px;
+	margin-bottom: 20px;
+	color: white;
+	letter-spacing: 3px;
+	font-family: 'Pacifico', cursive;
+	display: inline-block;
+}
+
+#icon3 {
+  font-size: 40px;
+  color: white;
+}
+
+#icon3:hover {
+	color: gray;
+	text-decoration: none;
+}
+
+.container {
+	overflow: scroll;
+}
+
+.app {
+	max-width: 1300px;
+	height: 650px;
+	display: flex;
+	margin: auto;
+	background-color: #3E2F5B;
+	border: solid;
+	border-top: none;
+	border-bottom: none;
+	border-width: 3px;
+	border-color: #98A6D4;
+}
+
+.map {
+	flex-grow: 4;
+	text-align: center;
+}
+
+.info {
+	margin: 0;
+	padding: 0;
+}
+
+.place {
+    padding: 10px;
+    list-style: none;
+    font-size: 17px;
+}

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Downtown Chicago</title>
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+	<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet" media="all">
+ 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+ 	<link href="https://fonts.googleapis.com/css?family=Lobster|Pacifico" rel="stylesheet">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+
+	<header class="text-center">
+	<h1 id="city">City Highlights</h1>
+	</header>
+
+	<div class="app" id="app">
+	<div class="container" id="search" style="width: 30%;">
+		<input class="form-control" placeholder="Search" id="search-box" data-bind="textInput: searchTerm, valueUpdate: 'afterkeydown'" />
+		<h2 class="text-center" id="chi">North Chicago</h2>
+		  <div class="panel-group">
+    		<div class="panel panel-info">
+      		<div class="panel-heading">
+        	<h3 class="panel-title">
+          	Popular Locations
+        	</h3>
+      		</div>
+        		<div class="panel-body">
+					<div id="list">
+						<ul class="info" id="info" data-bind="foreach: filteredList">
+						<li class="place" id="place" data-bind="text: name, click: bounce"></li><hr class="style-four">
+						</ul>
+					</div>
+        		</div>
+    		</div>
+  			</div>
+	</div>
+
+		<div class="map" id="map">There was an issue while loading Google Maps. Please Try Again.
+		</div>
+	</div>
+		<footer class="text-center">
+		<a href="https://github.com/kapa93" id="icon3" class="button fa fa-github"></a>
+		</footer>
+
+	<script src='js/knockout-3.2.0.js'></script>
+	<script src='js/jquery.js'></script>
+	<script src='js/app.js'></script>
+  	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCRDoWlqoDc6FVVdm2hSIUWiNQghpEBGfI&callback=startApp&libraries=places" onerror="errorHandling()"></script>
+</body>
+</html>
